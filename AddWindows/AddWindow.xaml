@@ -1,0 +1,57 @@
+﻿<Window x:Class="praktika5.AddWindows.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:praktika5.AddWindows"
+        mc:Ignorable="d"
+        Title="Добавить устройство" Height="486" Width="800">
+    <Grid>
+        <StackPanel Margin="20,20,20,20">
+            
+            <TextBlock Width="150" HorizontalAlignment="Left">Тип устройства</TextBlock>
+            <ComboBox Width="150" HorizontalAlignment="Left" x:Name="SelectDeviceType" SelectionChanged="SelectDeviceType_SelectionChanged">
+
+                <ComboBoxItem Content="Мобильное устройство" />
+                <ComboBoxItem Content="Смартфон" />
+                <ComboBoxItem Content="Электронная книга" />
+
+            </ComboBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="ModelText" Visibility="Collapsed">Название модели</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="ModelEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="ManufacturerText" Visibility="Collapsed">Название производителя</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="ManufacturerEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="PriceText" Visibility="Collapsed">Цена</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="PriceEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="YearText" Visibility="Collapsed">Год выпуска</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="YearEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="ScreeSizeText" Visibility="Collapsed">Размер экрана</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="ScreenSizeEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="ScreenResolutionText" Visibility="Collapsed">Разрешение экрана</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="ScreenResolutionEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="CameraSizeText" Visibility="Collapsed">Разрешение камеры</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="CameraSizeEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="RamSizeText" Visibility="Collapsed">Размер памяти</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="RamSizeEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="ScreenTypeText" Visibility="Collapsed">Тип экрана</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="ScreenTypeEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="FormatText" Visibility="Collapsed">Поддерживаемые форматы</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="FormatEnter" Visibility="Collapsed"></TextBox>
+
+            <TextBlock Width="200" HorizontalAlignment="Left" x:Name="BatteryCapacityText" Visibility="Collapsed">Ёмкость аккумулятора (в мАч)</TextBlock>
+            <TextBox Width="200" HorizontalAlignment="Left" x:Name="BatteryCapacityEnter" Visibility="Collapsed"></TextBox>
+
+            <Button Click="AddButton_Click" HorizontalAlignment="Center" Width="200" Height="50" FontWeight="Bold" FontSize="20" Margin="0,10,0,0">Добавить</Button>
+        </StackPanel>
+    </Grid>
+</Window>
